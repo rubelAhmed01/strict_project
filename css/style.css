@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-size: 16px;
+    font-weight: 500;
+}
+header{
+    background: #f9f9f9;
+    height: min-content;
+}
+.banner_section{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner_section h1{
+
+color: #fff;
+
+text-transform: uppercase;
+
+font-size: 100px;
+
+font-weight: 400;
+
+
+}
+.banner_section span{
+
+display: block;
+
+height: 2px;
+
+width: 100%;
+
+background: #15A4FA;
+}
+.banner_section p{
+
+color: #fff;
+
+margin: 15px 0;
+
+font-size: 18px;
+
+/* font-family: 'Lato', sans-serif; */
+}
+.btn_action{
+
+color: #fff;
+
+padding: 0;
+
+background: transparent;
+
+padding: 8px 15px;
+
+border: 1px solid #15A4FA;
+
+transition: .5s all ease-in-out;
+
+margin-bottom: 10px;
+}
+.hg{
+    min-height: 90vh;
+}
+.btn_action:hover{
+    color: #fff;
+    background: #15A4FA;
+    border: 1px solid #15A4FA;
+}
+
+.icon{
+
+color: #fff;
+
+font-size: 16px;
+
+position: absolute;
+
+top: 80%;
+
+left: 50%;
+
+transform: translateX(-50%);
+animation: updown 1s linear infinite;
+animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+
+    }
+    100%{
+        top: 85%;
+
+    }
+}
+.design_content{
+    background: #F6F9F9;
+
+}
+.design_content h1{
+
+font-size: 38px;
+
+color: #2D3950;
+
+font-weight: 400;
+
+/* font-family: 'Lato', sans-serif; */
+}
+.design_content p{
+
+color: #999999;
+
+font-size: 20px;
+
+font-weight: 400;
+
+/* font-family: 'Lato', sans-serif; */
+}
+
+.feature_section{
+
+}
+.icon_box{
+
+height: 80px;
+
+width: 80px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50,5fc3ff+50,5fc3ff+50 */
+background: rgb(72,186,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%, rgba(95,195,255,1) 50%, rgba(95,195,255,1) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%,rgba(95,195,255,1) 50%,rgba(95,195,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%,rgba(95,195,255,1) 50%,rgba(95,195,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+color: #fff;
+
+font-size: 40px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: auto;
+
+margin-bottom: 15px;
+}
+.icon_box i{
+
+}
+.feature_section h2{
+
+color: #2d3950;
+
+font-size: 22px;
+
+font-weight: 400;
+}
+.feature_section p{
+    
+color: #999999;
+    
+font-size: 15px;
+}
+.showcase_section{
+background: #F6F9F9;    
+}
+.showcase_section h1{
+
+font-size: 41px;
+
+color: #2d3950;
+
+font-weight: 400;
+}
+.showcase_section p{
+    
+color: #909090;
+    
+font-size: 15px;
+}
+.work{
+position: relative;
+}
+
+.work::before{
+content: '';    
+position: absolute;
+top: 0%;
+left: 0%;
+width: 0%; 
+height: 0%;   
+background-color: #60C4FF;
+opacity: 0;
+transition: .5s all ease-in-out;
+}
+.work:hover::before{
+opacity: .7;
+height: 100%;
+width: 100%;
+}
+.hover_icon{
+
+width: 90px;
+
+position: absolute;
+
+top: 60%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: .4s all ease-in-out;
+}
+.hover_icon ul{
+
+list-style: none;
+
+margin: 0;
+
+padding: 0;
+
+display: flex;
+
+justify-content: space-between;
+}
+.hover_icon ul li{
+
+/* text-decoration: none; */
+
+width: 40px;
+
+height: 40px;
+
+border: 1px solid #fdfafa;
+
+line-height: 40px;
+
+text-align: center;
+
+/* margin-left: 10px; */
+
+color: #fff;
+
+border-radius: 5px;
+}
+.hover_icon ul li i{
+    
+}
+.work:hover .hover_icon{
+opacity: 1;
+top: 50%;
+}
+
+
+/* footer start */
+
+form{
+    text-align: end;
+}
+.form-control:focus{
+    box-shadow: none;
+    background: transparent;
+    color: #fff;
+}
+form input[type="submit"]{
+    
+background: transparent;
+    
+border: none;
+    
+padding: none;
+    
+border: 1px solid #5fc3ff;
+    
+padding: 5px, 20px;
+    
+padding: 0;
+    
+padding: 5px 20px;
+    
+border-radius: 3px;
+transition: .4s all ease-in-out;
+color: #fff;
+}
+form input[type="submit"]:hover{
+    border: 1px solid #5fc3ff;
+    background-color: #5fc3ff;
+    color: #fff;
+}
+footer{
+    background-image: url(../images/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2d3950;
+    opacity: .7;
+}
+.footer-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+footer h1{
+font-size: 41px;
+font-weight: 400;
+color: #fff;
+}
+footer p{
+font-size: 15px;
+font-weight: 400;
+color: #999999;
+}
+/* form input[type="text"]{
+    background: transparent;
+    border: 1px solid #999999;
+
+}
+form input[type="email"]{
+    background: transparent;
+    border: 1px solid #999999;
+
+} */
+.form-control{
+    background: transparent;
+    border: 1px solid #999999;
+}
+
+/* footer end  */
+
+.contact-us{
+background: #F6F9F9;
+}
+.contact-us p{
+
+font-size: 15px;
+
+font-weight: 400;
+
+color: #999999;
+}
+.contact-us ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content:  flex-end;
+}
+.contact-us ul li{
+
+width: 30px;
+
+height: 30px;
+
+line-height: 30px;
+
+align-items: end;
+
+text-align: center;
+
+background: #15A4FA;
+
+/* border: 1px solid red; */
+
+margin: 0px 8px;
+transition: .4s all ease-in-out;
+border-radius: 3px;
+}
+.contact-us ul li a{
+
+color: #fff;
+}
+.contact-us ul li a i{
+
+}
+.contact-us ul li:hover{
+background: #12547e;
+
+}
